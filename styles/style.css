@@ -1,0 +1,287 @@
+@import url('header.css');
+@import url('produto.css');
+@import url('sobre.css');
+@import url('contato.css');
+@import url('footer.css');
+
+/* rgba(250,190,192,255) */
+
+:root {
+    --color-primary-1: #F9D7E6;
+    --color-primary-2: #6B8E23;
+
+    --color-neutral-1: #f8f0e7;
+    --color-neutral-2: #e0dedd;
+    --color-neutral-3: #868585;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-primary-1);
+}
+
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+    padding: 28px 0 28px 8%;
+}
+
+#cta{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4.5rem;
+    color: black;
+}
+
+#cta .title span {
+    color:var(--color-primary-2);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 100%;
+    padding-left: 250px;
+    width: fit-content;
+}
+
+.shape{
+    background-image: url("../components/images/2440099-green-plant-leaaves-in-spring-season-green-background-gratis-foto.jpg");
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #cta .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
+
+.titulo-secao {
+    color: var(--color-primary-2);
+    font-size: 1.563rem;
+}
+
+.subtitulo-secao {
+    font-size: 2.100rem;
+}
+
+@media screen and (max-width: 1170px) {
+    .titulo-secao {
+        font-size: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .subtitulo-secao {
+        font-size: 1.1rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+section {
+    padding: 28px 8% 28px 8%;
+}
+
+
+title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+h1{
+    font-weight: 200;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color:black;
+    font-weight: 600;
+}
+
+.btn-cadastro{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: black;
+    transition: background-color .3s ease;
+    background-color: var(--color-primary-2);
+}
+
+.btn-cadastro:hover{
+    background-color: #89c01b ;
+}
+
+a:hover{
+    color: var(--color-primary-2);
+    transition: 0.3s all;
+}
+
+img{
+    width: 500px;
+}
+
+section{
+    width: 100%;
+  
+    h2{
+      font-size: clamp(0.9em, 1vw, 2em);
+      margin: 0.2em 0;
+      font-weight: 500;
+    }
+  }
+  
+  .carossel-Container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    overflow: hidden;
+  }
+  
+  .carossel-Slide{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: calc(25% - 0.2em);
+    overflow: visible;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+  }
+  
+  .item{
+    position: relative;
+    right: 0;
+    flex: none;
+    /* border: 1px solid yellow;*/
+    background-color: yellow;
+    border-radius: 2px;
+    margin-right: 0.2em;
+    height: 21vh;
+    /* width: 241.6px;*/
+  
+    /* width: 19.7385620915%;*/
+  
+    width: 280px;
+  
+    /* width: 19.63%;*/
+  
+    transition: right 1s ease-out;
+  
+    box-sizing: content-box;
+  }
+  
+  .btnCarossel{
+    background: white;
+    width: 2%;
+    box-shadow: 0px 0px 6px 1px #636161a6;
+    border-radius: 50px;
+    height: 7%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #seta{
+        font-size: 20px;
+    }
+  }
+  
+  .btnCarossel:hover{
+    background: white;
+    box-shadow: 0px 0px 3px 1px var(--color-primary-2);
+  
+    #seta{
+      color: var(--color-primary-2);
+      transition: box-shadow 100ms;
+    }
+  }
+  
+  .BtnBack{
+    left: 0;
+  }
+  
+  .BtnNext{
+    right: 0;
+
+  }
+
+#successMessage {
+    display: none; /* A mensagem começa oculta */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#loom-companion-mv3 {
+    display: none;
+}

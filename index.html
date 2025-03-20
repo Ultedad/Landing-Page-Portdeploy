@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Belleza Pura</title>
+</head>
+
+<body style="height: 100%;">
+        <header>
+            <nav class="navbar">
+                <div id="logo">
+                    <img src="components/images/logo_marca3%20-%20Copi.png" alt="Logo" style="width: 100px;">
+                </div>
+                <ul class="nav_list">
+                    <li class="nav-item active">
+                        <a href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <button class="btn-cadastro">
+                    <i class="fa-solid fa-user"></i>
+                        Já tem uma conta?
+                </button>
+
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list">
+                    <li class="nav-item">
+                        <a href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+    
+                <button class="btn-cadastro">
+                    <i class="fa-solid fa-user"></i>
+                    Ja tem uma conta?
+                </button>
+            </div>
+        </header>
+
+        <main id="content">
+            <section id="home">
+                <div class="shape"></div>
+                <div id="cta">
+                    <h1 class="title">
+                        Cosméticos sustentáveis
+                        para realçar sua
+                        <span>Beleza Natural</span>
+                    </h1>
+    
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit ut aliquam, purus sit amet
+                    </p>
+                </div>
+                <div id="banner">
+                    <img src="components/images/produtos-de-beleza-cor-verde-com-folhas-verdes_927844-382-removebg-preview.png" alt="mulher-natural">
+                </div>
+            </section>
+            
+            <!-- Produtos -->
+            <section id="produtos">
+                <h2 class="titulo-secao">Produtos</h2>
+                <h3 class="subtitulo-secao">Escolhidos para você</h3>
+                <!-- Carrosel de Produtos -->
+                <div class="carossel-Container">
+                    <div class="btnCarossel BtnBack disable">
+                        <i id="seta" class="fa-solid fa-less-than"></i>
+                    </div>
+                    <div id="menu-produtos">
+                        <!-- Card 1 -->
+                        <div class="produto-card">
+                          <div class="produto-coracao">
+                              <i id="coracao" class="fa-regular fa-heart"></i>
+                          </div>
+                          <img src="components/images/marcas1-produto1-removebg-preview.png" class="produto-img" alt="Produto 1">
+                          <h3>Lorem ipsum</h3>
+                          <span class="produto-descricao">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </span>
+                          <div class="produto-classificao">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="produto-card">
+                          <div class="produto-coracao">
+                              <i id="coracao" class="fa-regular fa-heart"></i>
+                          </div>
+                          <img src="components/images/marcas1-produto2-removebg-preview.png" class="produto-img" alt="Produto 1">
+                          <h3>Lorem ipsum</h3>
+                          <span class="produto-descricao">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </span>
+                          <div class="produto-classificao">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                          <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="produto-card">
+                          <div class="produto-coracao">
+                              <i id="coracao" class="fa-regular fa-heart"></i>
+                          </div>
+                          <img src="components/images/marcas1-produto3-removebg-preview.png" class="produto-img" alt="Produto 1">
+                          <h3>Lorem ipsum</h3>
+                          <span class="produto-descricao">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </span>
+                          <div class="produto-classificao">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="produto-card">
+                            <div class="produto-coracao">
+                                <i id="coracao" class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="components/images/produto4.png" class="produto-img" alt="Produto 1">
+                            <h3>Lorem ipsum</h3>
+                            <span class="produto-descricao">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                            <div class="produto-classificao">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="produto-card">
+                            <div class="produto-coracao">
+                                <i id="coracao" class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="components/images/produto5.png" class="produto-img" alt="Produto 1">
+                            <h3>Lorem ipsum</h3>
+                            <span class="produto-descricao">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                            <div class="produto-classificao">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="produto-card">
+                            <div class="produto-coracao">
+                                <i id="coracao" class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="components/images/produto6.png" class="produto-img" alt="Produto 1">
+                            <h3>Lorem ipsum</h3>
+                            <span class="produto-descricao">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                            <div class="produto-classificao">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="produto-card">
+                            <div class="produto-coracao">
+                                <i id="coracao" class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="components/images/produto7.png" class="produto-img" alt="Produto 1">
+                            <h3>Lorem ipsum</h3>
+                            <span class="produto-descricao">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                            <div class="produto-classificao">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="produto-card">
+                            <div class="produto-coracao">
+                                <i id="coracao" class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="components/images/produto8.png" class="produto-img" alt="Produto 1">
+                            <h3>Lorem ipsum</h3>
+                            <span class="produto-descricao">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                            <div class="produto-classificao">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                        <!-- Card 9 -->
+                        <div class="produto-card">
+                            <div class="produto-coracao">
+                                <i id="coracao" class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="components/images/produto9.png" class="produto-img" alt="Produto 1">
+                            <h3>Lorem ipsum</h3>
+                            <span class="produto-descricao">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                            <div class="produto-classificao">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#contato" class="btn-produto">Tenho Interesse</a>
+                        </div>
+                    </div>
+                    <div class="btnCarossel BtnNext">
+                        <i id="seta" class="fa-solid fa-greater-than"></i>
+                    </div>
+                </div>
+              </section>
+
+
+              <!-- Sobre -->
+               <section id="sobre">
+                <h2 class="titulo-secao">Sobre a Belleza Pura</h2>
+                <h3 class="subtitulo-secao">Vem conhecer mais um pouco da nossa historia</h3>
+                <!-- Card 1 do Sobre -->
+                <div class="sobre-card">
+                    <div class="sobre-informacoes">
+                        <h3 class="fs-2 text" style="font-weight: 600;">Quem Somos?</h3>
+						<p class="fs-6 text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+							euismod
+							metus.
+							In aliquam, urna posuere egestas dignissim, nulla dolor.
+						</p>
+						<p class="fs-6 text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+							euismod
+							metus.
+							In aliquam, urna posuere egestas dignissim, nulla dolor pretium risus, ac imperdiet erat
+							erat quis nibh.
+							Quisque viverra volutpat eros vitae vehicula. Pellentesque tincidunt, lacus eu tincidunt
+							finibus. <br>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+							euismod
+							metus.
+							Pellentesque tincidunt, lacus eu tincidunt finibus.
+						</p>
+                    </div>
+                    <img class="sobre-img" src="components/images/Beleza-Sustentavel_V3_Abre-Materia.jpg" alt="mulher-natural">
+                </div>
+
+                <!-- Card 2 do Sobre-->
+                <div class="sobre-card2">
+                    <div class="sobre-informacoes">
+                        <h3 class="fs-2 text" style="font-weight: 600;">Lorem ipsum dolor sit amet,
+							consectetur
+							adipiscing elit. Nam vehicula enim dui.</h3>
+						<p class="fs-6 text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+							euismod metus.
+							In aliquam, urna posuere egestas dignissim, nulla dolor pretium risus, ac imperdiet erat
+							erat quis nibh.
+							Quisque viverra volutpat eros vitae vehicula. Pellentesque tincidunt, lacus eu tincidunt
+							finibus, tellus
+							quam dapibus quam, nec lacinia nunc nulla nec lectus. Nulla eleifend enim at justo
+							tristique, vulputate
+							convallis turpis vestibulum. Nunc eget magna non velit aliquet imperdiet quis egestas leo.
+							Pellentesque tincidunt, lacus eu tincidunt finibus, tellus quam dapibus quam, nec lacinia
+							nunc nulla nec
+							lectus. Nulla eleifend enim at justo tristique, vulputate convallis turpis vestibulum. Nunc
+							eget magna non
+							velit aliquet imperdiet quis egestas leo.
+						</p>
+                    </div>
+                    <img class="sobre-img2" src="components/images/diversidade-de-mulheres-de-beleza-e-cuidados-com-a-pele-amigas-com-uma-folha-de-planta-retrato-de-jo.png" alt="mulheres-naturais">
+                </div>
+
+                <!-- Depoimentos -->
+                <div class="sobre-depoimentos"></div>
+
+               </section>
+
+               <!-- Contato -->
+               <section id="contato">
+                <div class="contato-form">
+                    <div class="form-bag">
+                        <h2 style="font-weight: bolder;
+                                font-size: 1.5rem;">Se interessou em algum produto?
+                        </h2>
+                        <h4 style="font-weight: 400;
+                                font-size: 1.0rem;">Preencha o formulário abaixo e fale conosco
+                        </h4>
+                        <form id="contactForm-2">
+                            <div class="campoForm">
+                                <i class="fa-solid fa-user"></i>
+                                <input class="border-0 p-0" type="text" id="name-2" name="name" placeholder="Nome" required>
+                            </div>
+                            <div class="campoForm">
+                                <i class="fa-solid fa-phone"></i>
+                                <input class="border-0 p-0" type="tel" id="telefone-2" name="telefone" placeholder="Telefone" required>
+                            </div>
+                            <div class="campoForm">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input class="border-0 p-0" type="email" id="email-2" name="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="campoForm">
+                                <i class="fa-brands fa-shopify"></i>
+                                <input class="border-0 p-0" type="text" id="produto" name="Produto"
+                                    placeholder="Produto interessado">
+                            </div>
+
+                            <div class="campo-politica">
+                                <input class="border-0 p-0 mr-3" type="checkbox" id="termos-2" name="termos"
+                                    style="width: 23px; height: 22px;" required>
+                                <label class="mb-0 ms-2" style="font-size: 12px;">Concordo em receber comunicações de marketing como newsletters e novidades Belleza Pura Group. Ao clicar no botão abaixo você concorda com a Política de Privacidade*</label>
+                            </div>
+    
+                            <button class="btn-cadastro" type="submit">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                <div id="successMessage">
+                    Formulário enviado com sucesso!
+                </div>
+                </div>
+                <div class="contato-informacoes">
+                    <h2>Venha receber novas atualizações</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae euismod metus. In aliquam, urna posuere egestas dignissim, nulla dolor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Mais Informações -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section1">
+                    <div class="footer-icone">
+                        <img style="margin-right: .5rem !important;
+                                    vertical-align: middle;
+                                    width: 100px;" src="components/images/logo_marca3%20-%20Copi.png" alt="log" title="logo" width="258px" class="mb-3">
+                        <p style="margin: 0;">CNPJ: 00.000.000/0000-00</p>
+                    </div>
+                    <div class="footer-info" style="width: 25%;">
+                        <h6 style="margin-bottom: 1rem !important;
+                                font-size: 1rem;"
+                                >Nossas redes sociais
+                        </h6>
+                        <div class="simbolo-card">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p style="margin: 0 !important;">(00) 00000-0000</p>
+                        </div>
+                        <div class="simbolo-card">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p style="margin: 0 !important;">(00) 00000-0000</p>
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <h6 style="margin-bottom: 1rem !important;
+                                font-size: 1rem;"
+                                >Nosso Endereço
+                        </h6>
+                        <div class="simbolo-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="m-0 localization">Lorem ipsum dolor sit amet am, nº 000 – Lorem ipsum dolor –
+                                Lorem/XX, CEP: 00.000-000</p>
+                        </div>
+                    </div>
+                    <div class="footer-email">
+                        <h6 style="margin-bottom: 1rem !important;
+                                font-size: 1rem;"
+                                >Nossos Contatos
+                        </h6>
+                        <div class="simbolo-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <p style="margin: 0 !important;">(00) 00000-0000</p>
+                        </div>
+                        <div class="simbolo-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <p style="margin: 0 !important;">(00) 00000-0000</p>
+                        </div>
+                        <div class="simbolo-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="m-0">contato@contatodeteste.com.br</p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="footer-section2">
+                    <p style="font-size: 13px; font-weight: 400;">Copyright © 2024 -
+                        Todos os direitos reservados à <span class="text-decoration-underline"
+                            style="font-weight: 600;">Esta Empresa.</span></p>
+                    <img style="width: 71px;
+                            height: 55px;" src="components/images/logo_marca3%20-%20Copi.png" alt="logo" title="logo" width="100px" height="13px">
+                    </div>
+            </div>
+        </footer>
+        <script src="javascript/script.js"></script>
+</body>
+</html>

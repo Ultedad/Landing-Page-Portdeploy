@@ -1,0 +1,151 @@
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 160vh;
+}
+
+.sobre-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    width: 100%;
+    background-color: var(--color-neutral-1);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 60px 60px 0px;
+    align-items: center;
+}
+
+.sobre-card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    width: 100%;
+    background-color: var(--color-neutral-1);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 60px 0px 0px 60px;
+    align-items: center;
+}
+
+.sobre-informacoes {
+    padding: 2.5rem;
+    order: 1;
+}
+
+.sobre-informacoes h3 {
+    font-size: 2rem;
+    color: var(--color-primary-2);
+}
+
+.sobre-informacoes p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.sobre-img {
+    order: 2;
+    border-radius: 0px 60px 60px 0px;
+    width: 700px;
+}
+
+.sobre-img2 {
+    order: 2;
+    border-radius: 60px 0px 0px 60px;
+    width: 700px;
+}
+
+@media screen and (max-width: 1340px) {
+    .sobre-informacoes {
+        padding: 1.0rem;
+    }
+
+    .sobre-img {
+        width: 600px;
+    }
+
+    .sobre-img2 {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #sobre {
+        min-height: auto;
+    }
+
+
+    .sobre-card {
+        flex-direction: column;
+        border-radius: 50px;
+        max-width: 500px;
+        padding: 0;
+    }
+
+    .sobre-card2 {
+        flex-direction: column;
+        border-radius: 50px;
+        max-width: 500px;
+        padding: 0;
+    }
+
+    .sobre-informacoes {
+        padding: 1.5rem;
+        order: 2;
+    }
+
+    .sobre-img {
+        order: 1;
+        border-radius: 50px;
+        width: 500px;
+    }
+
+    .sobre-img2 {
+        order: 1;
+        border-radius: 50px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .sobre-card {
+        flex-direction: column;
+        border-radius: 30px;
+        max-width: auto;
+        padding: 0;
+
+    }
+
+    .sobre-card2 {
+        flex-direction: column;
+        border-radius: 30px;
+        max-width: auto;
+        padding: 0;
+    }
+
+    .sobre-informacoes {
+        padding: 1.5rem;
+        order: 2;
+    }
+
+    .sobre-img {
+        order: 1;
+        border-radius: 30px;
+        width: -webkit-fill-available;
+    }
+
+    .sobre-img2 {
+        order: 1;
+        border-radius: 30px;
+        width: -webkit-fill-available;
+    }
+}
